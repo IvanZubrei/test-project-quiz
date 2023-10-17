@@ -49,22 +49,15 @@ h1, h2, h3, h4, p{
 }
 
 body{
-  border-radius: 16px;
   background: #F9EFFF;
 }
 
 .container{
   max-width: 1996px;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 .header{
-  border-radius: 16px 16px 0px 0px;
-     
-}
-
-.header__container{
   display: flex;
   justify-content: space-between;
   align-items: center;
