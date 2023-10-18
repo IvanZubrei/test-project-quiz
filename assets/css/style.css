@@ -176,8 +176,7 @@ body{
 
 .header-content__btn{
   display: block;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 .container__content{
@@ -355,4 +354,65 @@ body{
   color: #FFF;
   transition: all 0.15s ease;
   padding: 8px 32px 8px 60px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 48px;
+  border-radius: 32px 32px 0px 0px;
+  background-color: #000;
+}
+
+.footer__contacts{
+  max-width: 1043px;
+}
+
+.footer__phone-email{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  padding: 16px 0 32px 0;
+}
+
+.footer__phone-email-text{
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+}
+
+.footer__phone-email-link{
+  color: #FFF;
+  font-family: 'Neue Machina', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;  
+}
+
+.footer__social{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-img:hover{
+  transform: scale(1.02);
+  transition: 0.15s ease;
+}
+
+.footer__text{
+  display: flex;
+  align-items: flex-end;
+  color: #FFF;
+  font-family: 'Neue Machina', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
