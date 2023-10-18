@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Raleway';  
+  src: local('Futura PT Cond Book'),      
+    url('../fonts/Raleway/Raleway-Medium.eot') format('embedded-opentype'),
+    url('../fonts/Raleway/Raleway-Medium..woff2') format('woff2'),
+    url('../fonts/Raleway/Raleway-Medium.woff') format('woff'),
+    url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+}
+
+.swiper__content{
+  padding: 96px 0;
+}
+
+.swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.swiper-wrapper{  
+  width: 126%;
+  height: 100%;
+  padding: 3px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* position: relative; */
+}
+
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 400px;
+  height: 464px;
+  padding: 8px; 
+  border-radius: 32px; 
+  background-repeat: no-repeat;
+  background-position: center;  
+  background-size: cover;
+}
+
+.swiper-slide__content{
+  position: relative;
+  padding: 58px 16px 24px 16px;
+  border-radius: 24px;
+  background-color: #FFF;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
+.avatar{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  background-color: #FFF;
+  border-radius: 50%;
+  top: -48px;
+  left: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.avatar__img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.swiper-slide__content-title{  
+  padding: 8px 0 16px 0;
+  text-align: center;  
+  font-size: 24px;  
+  font-weight: 700;  
+}
+
+.swiper-slide__content-text{  
+  font-size: 16px;  
+  font-weight: 500;  
+}
+
+.swiper-slide1 {
+  background-image: url(../../img/images/background-image1.png);
+  
+}
+
+.swiper-slide2 {
+  background-image: url(../../img/images/background-image2.png);
+  
+}
+.swiper-slide3 {
+  
+  background-image: url(../../img/images/background-image3.png);
+  
+}
+.swiper-slide4 {
+  
+  background-image: url(../../img/images/background-image4.png);
+  
+}
+.swiper-slide5 {
+  
+  background-image: url(../../img/images/background-image1.png);
+  
+}
+.swiper-slide6 {
+  
+  background-image: url(../../img/images/background-image2.png);
+  
+}
+.swiper-slide7 {
+  
+  background-image: url(../../img/images/background-image3.png);
+  
+}
+.swiper-slide8 {
+  
+  background-image: url(../../img/images/background-image4.png);
+  
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 40%;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  
+}
+
+.swiper-button-next {
+  right: var(--swiper-navigation-sides-offset,35px);
+  left: auto;
+}
+
+.swiper-button-prev {
+  left: var(--swiper-navigation-sides-offset,-35px);
+  right: auto;
+}
+
+.swiper-button-next:after{
+  content: url("../../img/images/swiper-button-next.png");
+  width: 100px; 
+  height: 100px; 
+  
+} 
+
+.swiper-button-prev:after {
+  content: url("../../img/images/swiper-button-prev.png");
+  width: 100px; 
+  height: 100px;
+}
+
+
+
+

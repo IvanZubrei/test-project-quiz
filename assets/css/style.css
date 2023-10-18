@@ -209,8 +209,7 @@ body{
 }
 
 .container__history-test{
-  display: flex;
-  padding: 96px 0;
+  display: flex;  
 }
 
 .container__history{   
