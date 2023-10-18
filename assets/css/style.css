@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'Raleway';  
   src: local('Futura PT Cond Book'),      
-  url('../fonts/Raleway/Raleway-Medium.eot') format('embedded-opentype'),
-  url('../fonts/Raleway/Raleway-Medium..woff2') format('woff2'),
-  url('../fonts/Raleway/Raleway-Medium.woff') format('woff'),
-  url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+    url('../fonts/Raleway/Raleway-Medium.eot') format('embedded-opentype'),
+    url('../fonts/Raleway/Raleway-Medium..woff2') format('woff2'),
+    url('../fonts/Raleway/Raleway-Medium.woff') format('woff'),
+    url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Neue Machina';
   src: local('Neue Machina'),
-      url('../fonts/NeueMachina/NeueMachina-Bold.eot') format('embedded-opentype'),
-      url('../fonts/NeueMachina/NeueMachina-Bold.woff2') format('woff2'),
-      url('../fonts/NeueMachina/NeueMachina-Bold.woff') format('woff'),
-      url('../fonts/NeueMachina/NeueMachina-Bold.ttf') format('truetype');
+    url('../fonts/NeueMachina/NeueMachina-Bold.eot') format('embedded-opentype'),
+    url('../fonts/NeueMachina/NeueMachina-Bold.woff2') format('woff2'),
+    url('../fonts/NeueMachina/NeueMachina-Bold.woff') format('woff'),
+    url('../fonts/NeueMachina/NeueMachina-Bold.ttf') format('truetype');
 }
 
 html{
@@ -64,7 +64,6 @@ body{
   border-radius: 16px 16px 32px 32px;
   border-bottom: 1px solid #F2F2F2;
   background: rgba(255, 255, 255, 0.90);
-  backdrop-filter: blur(70px);
   padding: 0 48px;
 }
 
@@ -191,8 +190,7 @@ body{
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 8px 166px;
-  background-color: ;
+  padding: 8px 166px;  
 }
 
 .grade__item{
@@ -249,9 +247,32 @@ body{
 }
 
 .tests{
+  position: relative;
   padding: 48px 32px 32px 32px;
   border-radius: 32px;
   background-color: #FFF;
+}
+
+.tests__block2{
+  position: absolute;
+  top: -8px;
+  left: 24px;
+  right: 24px;  
+  height: 100px;
+  border-radius: 32px;
+  background: #E9C4FF;
+  z-index: -1;
+}
+
+.tests__block4{
+  position: absolute;
+  top: -16px;
+  left: 48px;
+  right: 48px;  
+  height: 200px;
+  border-radius: 32px;
+  background: #F0D9FF;
+  z-index: -2;
 }
 
 .tests__title{
@@ -271,5 +292,68 @@ body{
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin: 24px 0 72px 0;
+  padding:  24px 0 0 0;
+}
+
+.tabs{
+  padding: 72px 0 64px 0;
+}
+
+.tabs__btn{
+  display: flex;  
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.form__checkbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;    
+}
+
+.form__checkbox input[type=checkbox] {
+	display: none;   
+}
+
+.form__checkbox label {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	cursor: pointer;
+	position: relative;
+	padding: 8px 32px;
+  border-radius: 20px;
+  border: 2px solid #000;
+	color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;   
+}
+
+.form__checkbox label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;	  
+  left: 32px;   
+}
+ 
+.form__checkbox input[type=checkbox]:checked + label:before {  
+	background: url(../img/images/icon-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;  
+  background-size: 60%;
+  background-color: #FFF;
+  border-radius: 50%;  
+}
+
+.form__checkbox input[type=checkbox]:checked + label {    
+  background-color: #000;
+  color: #FFF;
+  transition: all 0.15s ease;
+  padding: 8px 32px 8px 60px;
 }

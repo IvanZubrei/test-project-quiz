@@ -11,55 +11,54 @@
 <body>
   <header>
     <div class="container">
-        <div class="header">
-          <img class="logo" src="./img/images/logo.svg" alt="logo image">
-          <nav>
-            <ul class="nav-list">
-              <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Главная</a>
-              </li>
-              <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Квиз</a>
-              </li>
-              <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Отзывы</a>
-              </li>
-              <li>
-                <a class="nav-list__link" href="#">Не главная</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="contacts">
-            <button class="btn">Связаться с нами</button>
-            <ul class="social">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="./img/images/tik-tok.png" alt="tik tok image">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="./img/images/vk.png" alt="vk image">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="./img/images/telegram.png" alt="telegram image">
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class="header">
+        <img class="logo" src="./img/images/logo.svg" alt="logo image">
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Квиз</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="nav-list__link" href="#">Не главная</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <button class="btn">Связаться с нами</button>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="./img/images/tik-tok.png" alt="tik tok image">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="./img/images/vk.png" alt="vk image">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="./img/images/telegram.png" alt="telegram image">
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="header__content">
-          <h1 class="title">Это Супер-квиз!</h1>
-          <p class="header__content-text">Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех людей, которые
-            любят проходить тесты!</p>
-          <button class="btn header-content__btn">Пройти супер-квиз</button>
-          <img class="header__content-img-left" src="./img/images/question-mark-left.png"
-            alt="question mark left image">
-          <img class="header__content-img-right" src="./img/images/question-mark-right.png"
-            alt="question mark right image">
-        </div>      
+      </div>
+      <div class="header__content">
+        <h1 class="title">Это Супер-квиз!</h1>
+        <p class="header__content-text">Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех людей, которые
+          любят проходить тесты!</p>
+        <button class="btn header-content__btn">Пройти супер-квиз</button>
+        <img class="header__content-img-left" src="./img/images/question-mark-left.png" alt="question mark left image">
+        <img class="header__content-img-right" src="./img/images/question-mark-right.png"
+          alt="question mark right image">
+      </div>
     </div>
   </header>
   <main>
@@ -87,7 +86,7 @@
             <p class="grade__text">Круто</p>
           </li>
         </ul>
-        <div class="container__history-test">          
+        <div class="container__history-test">
           <div class="container__history">
             <div class="block__question-answer">
               <h4 class="block__title">Какие виды тестов вам нравятся?</h4>
@@ -95,10 +94,49 @@
             </div>
           </div>
           <div class="tests">
+            <div class="tests__block2"></div>
+            <div class="tests__block4"></div>
             <h2 class="tests__title">Какие виды тестов вам нравятся?</h2>
-            <p class="tests__text">Многие из нас хоть раз попадались на эту удочку — хочешь пройти всего один тест из интернета, и вдруг
+            <p class="tests__text">Многие из нас хоть раз попадались на эту удочку — хочешь пройти всего один тест из
+              интернета, и вдруг
               понимаешь, что пролетело полдня.
             </p>
+            <div class="tabs">
+              <div class="tabs__btn">
+                <div class="form__checkbox">
+                  <input id="temperament" type="checkbox" name="checkbox" value="1" checked>
+                  <label for="temperament">На темперамент</label>
+                </div>
+                <div class="form__checkbox">
+                  <input id="marvel" type="checkbox" name="checkbox" value="2">
+                  <label for="marvel">Кто я из вселенной Марвел</label>
+                </div>
+                <div class="form__checkbox">
+                  <input id="see" type="checkbox" name="checkbox" value="3">
+                  <label for="see">Увидел это</label>
+                </div>
+                <div class="form__checkbox">
+                  <input id="totem" type="checkbox" name="checkbox" value="4">
+                  <label for="totem">Мое тотемное животное</label>
+                </div>
+                <div class="form__checkbox">
+                  <input id="iq" type="checkbox" name="checkbox" value="4">
+                  <label for="iq">На IQ</label>
+                </div>
+                <div class="form__checkbox">
+                  <input id="reserve" type="checkbox" name="checkbox" value="4">
+                  <label for="reserve">На словарный запас</label>
+                </div>
+                <div class="form__checkbox">
+                  <input id="logics" type="checkbox" name="checkbox" value="4">
+                  <label for="logics">На логическое мышление</label>
+                </div>
+                <div class="form__checkbox">
+                  <input id="intelligence" type="checkbox" name="checkbox" value="4">
+                  <label for="intelligence">На уровень интеллекта</label>
+                </div>
+              </div>
+            </div>
             <button class="btn">Продолжить</button>
           </div>
         </div>
