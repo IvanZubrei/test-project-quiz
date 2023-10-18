@@ -38,7 +38,7 @@ li{
   list-style: none;
 }
 
-button{
+button, input{
   border: none; 
   outline: none;
   background-color: inherit;
@@ -65,10 +65,201 @@ body{
   border-bottom: 1px solid #F2F2F2;
   background: rgba(255, 255, 255, 0.90);
   padding: 0 48px;
+  position: relative;
+}
+
+.modal__contact{
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 676px;
+  padding: 48px 32px 32px 32px;
+  border-radius: 32px;
+  background-color: #f7f7f7;
+  border: 2px solid #ddd9d9;
+  z-index: 3;
+}
+
+.modal__contact-container{
+  position: relative;
+}
+
+.modal-contact-container__btn-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 62px;
+  height: 62px;  
+  border-radius: 16px;
+  border: 2px solid #000;
+  background-color: inherit;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contact-container__btn-close:hover{
+  background-color: #9E00FF;  
+  transition: 0.15s ease;
+}
+
+.modal-contact__btn-close:hover path{
+  stroke: white;
+}
+
+.modal__contact-title{
+  color: #000;
+  font-family: 'Neue Machina', sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.modal__contact-text{
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 64px 0 24px 0;
+}
+
+.modal__contact-container-input{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px 0;  
+}
+
+.modal-contact__input{
+  width: 294px;
+  height: 48px;  
+  padding: 8px 0;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;  
+  border-bottom: 2px solid #000;
+}
+
+.modal-input__margin-right{
+  width: 282px;
+  margin-right: 12px;  
+}
+
+.modal-input__margin-left{
+  width: 282px;
+  margin-left: 12px;
+}
+
+.modal-contact__input::placeholder{   
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.3;
+}
+
+.modal-contact-tabs__btn{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 20px 37px 20px;
+}
+
+.modal-contact-form__radio input[type=radio] {
+	display: none;
+}
+
+.modal-contact-form__radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding: 8px 22px 8px 57px;
+  border-radius: 20px;
+  border: 2px solid #000;
+	color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;   
+}
+
+.modal-contact-form__radio label:before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	position: absolute;	
+  top: 0;
+	bottom: 0px;
+  left: 22px;
+  margin: auto 0; 
+	background: url(../img/images/radio-btn.svg) 0 0 no-repeat;
+  background-size: cover;
+}
+ 
+.modal-contact-form__radio input[type=radio]:checked + label:before {  
+	background: url(../img/images/radio-btn-active.svg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.modal-contact-form__radio input[type=radio]:checked + label {
+  background-color: #000;
+  color: #FFF;
+  transition: all 0.7s
+}
+
+.modal__contact-btn{
+  width: 612px;
+  padding: 12px 32px;
+}
+
+.modal__data-sent{
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 676px;
+  padding: 48px 32px 32px 32px;
+  border-radius: 32px;
+  background-color: #f7f7f7;
+  border: 2px solid #ddd9d9;
+  z-index: 3;
+}
+
+.modal__data-sent-img{
+  padding-top: 128px;
+}
+
+.modal__data-sent-btn{
+  width: 612px;
+  padding: 12px 32px;
+}
+
+.modal__contact-open-close{
+  display: block;
+}
+
+.modal__data-sent-open-close{
+  display: block;
 }
 
 .logo{
-  margin: 15px 0 14px 0;
+  padding: 15px 0 14px 0;
 }
 
 .nav-list{
@@ -189,7 +380,7 @@ body{
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 8px 166px;  
+  padding: 8px 166px 96px 166px;  
 }
 
 .grade__item{

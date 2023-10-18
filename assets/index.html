@@ -14,6 +14,78 @@
   <header>
     <div class="container">
       <div class="header">
+        <div class="modal__contact">
+          <div class="modal__contact-container">
+            <div class="modal-contact-container__btn-close">
+              <svg class="modal-contact__btn-close" width="62" height="62" viewBox="-18 -18 60 60" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 25L25 1M25 25L1 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h2 class="modal__contact-title">
+              Заполните контактные данные
+            </h2>
+            <p class="modal__contact-text">
+              Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех людей, которые любят проходить тесты!
+            </p>
+            <div class="modal__contact-container-input">
+              <input class="modal-contact__input modal-input__margin-right" type="text" placeholder="Ваше имя">
+              <input class="modal-contact__input modal-input__margin-left" type="text" placeholder="Фамилия">
+              <input class="modal-contact__input" type="text" placeholder="Ваш комментарий">
+              <input class="modal-contact__input" type="file" placeholder="Приложить файлы">
+            </div>
+            <p class="modal__contact-text">
+              Этот квиз предназначен для тех людей, которые любят проходить тесты!
+            </p>
+            <div class="modal-contact-tabs__btn">
+              <div class="modal-contact-form__radio">
+                <input id="winter" type="radio" name="radio" value="1">
+                <label for="winter">Не знаю </label>
+              </div>
+              <div class="modal-contact-form__radio">
+                <input id="radio" type="radio" name="radio" value="2">
+                <label for="radio">Увидел это</label>
+              </div>
+              <div class="modal-contact-form__radio">
+                <input id="radio2" type="radio" name="radio" value="3">
+                <label for="radio2">Вон то</label>
+              </div>
+              <div class="modal-contact-form__radio">
+                <input id="radio3" type="radio" name="radio" value="4">
+                <label for="radio3">Вон то</label>
+              </div>
+              <div class="modal-contact-form__radio">
+                <input id="radio4" type="radio" name="radio" value="4">
+                <label for="radio4">Увидел это</label>
+              </div>
+              <div class="modal-contact-form__radio">
+                <input id="radio5" type="radio" name="radio" value="4">
+                <label for="radio5">Не знаю </label>
+              </div>
+            </div>
+            <button class="btn modal__contact-btn">Продолжить</button>
+          </div>
+        </div>
+        <div class="modal__data-sent">
+          <div class="modal__contact-container">
+            <div class="modal-contact-container__btn-close modal__data-sent__btn-close">
+              <svg class="modal-contact__btn-close" width="62" height="62" viewBox="-18 -18 60 60" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 25L25 1M25 25L1 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img class="modal__data-sent-img" src="./img/images/smile-ok.svg" alt="smile icon">
+            <h2 class="modal__contact-title">
+              Ваши данные Отправлены
+            </h2>
+            <p class="modal__contact-text">
+              Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех людей, которые любят проходить тесты!
+            </p>
+            <button class="btn modal__data-sent-btn">Вернутся на сайт</button>
+          </div>
+        </div>
         <img class="logo" src="./img/images/logo.svg" alt="logo image">
         <nav>
           <ul class="nav-list">
@@ -32,7 +104,7 @@
           </ul>
         </nav>
         <div class="contacts">
-          <button class="btn">Связаться с нами</button>
+          <button class="btn btn__open-popup">Связаться с нами</button>
           <ul class="social">
             <li class="social__item">
               <a class="social__link" href="#">
@@ -263,7 +335,7 @@
           </div>
           <ul class="footer__social">
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#">                
+              <a class="footer__social-link" href="#">
                 <img class="footer__social-img" src="./img/images/tik-tok.svg" alt="tik tok image">
               </a>
             </li>
@@ -285,6 +357,7 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./libs/swiper/swiper.min.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
