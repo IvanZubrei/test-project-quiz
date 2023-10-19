@@ -77,11 +77,11 @@
                 <label for="radio4">Вон то</label>
               </div>
               <div class="modal-contact-form__radio">
-                <input id="radio5" type="radio" name="radio" value="4">
+                <input id="radio5" type="radio" name="radio" value="5">
                 <label for="radio5">Увидел это</label>
               </div>
               <div class="modal-contact-form__radio">
-                <input id="radio6" type="radio" name="radio" value="4">
+                <input id="radio6" type="radio" name="radio" value="6">
                 <label for="radio6">Не знаю </label>
               </div>
             </div>
@@ -114,15 +114,26 @@
               <a class="nav-list__link" href="#">Главная</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Квиз</a>
+              <a class="nav-list__link" href="#sectionQuiz">Квиз</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Отзывы</a>
+              <a class="nav-list__link" href="#sectionReviews">Отзывы</a>
             </li>
-            <li>
-              <a class="nav-list__link" href="#">Не главная</a>
+            <li class="nav-list__item dropdown">
+              <a class="nav-list__link dropbtn" href="#">Не главная</a>              
+              <ul class="dropdown-content">
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__link" href="#">Подпункт</a>
+                </li>
+                <li class="dropdown-content__item2">
+                  <a class="dropdown-content__link dropdown-content__link2" href="#">Еще подпункт</a>
+                </li>
+                <li class="dropdown-content__item3">
+                  <a class="dropdown-content__link dropdown-content__link3" href="#">И еще один подпункт</a>
+                </li>
+              </ul>            
             </li>
-          </ul>
+          </ul>          
         </nav>
         <div class="contacts">
           <button class="btn btn__open-popup">Связаться с нами</button>
@@ -149,7 +160,9 @@
         <h1 class="title">Это Супер-квиз!</h1>
         <p class="header__content-text">Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех людей, которые
           любят проходить тесты!</p>
-        <button class="btn header-content__btn">Пройти супер-квиз</button>
+        <div class="header-content__btn">          
+          <a class="header__content-btn-link" href="#sectionQuiz">Пройти супер-квиз</a>
+        </div>
         <img class="header__content-img-left" src="./img/images/question-mark-left.png" alt="question mark left image">
         <img class="header__content-img-right" src="./img/images/question-mark-right.png"
           alt="question mark right image">
@@ -158,7 +171,7 @@
   </header>
   <main>
     <section>
-      <div class="container__content">
+      <div class="container__content" id="sectionQuiz" >
         <ul class="grade">
           <li class="grade__item">
             <img class="grade__img" src="./img/images/smiley-with-tongue.svg" alt="smiley with tongue">
@@ -199,11 +212,11 @@
             <div class="tabs">
               <div class="tabs__btn">
                 <div class="form__checkbox">
-                  <input id="temperament" type="checkbox" name="checkbox" value="1" checked>
+                  <input id="temperament" type="checkbox" name="checkbox" value="1">
                   <label for="temperament">На темперамент</label>
                 </div>
                 <div class="form__checkbox">
-                  <input id="marvel" type="checkbox" name="checkbox" value="2">
+                  <input id="marvel" type="checkbox" name="checkbox" value="2" checked>
                   <label for="marvel">Кто я из вселенной Марвел</label>
                 </div>
                 <div class="form__checkbox">
@@ -219,7 +232,7 @@
                   <label for="iq">На IQ</label>
                 </div>
                 <div class="form__checkbox">
-                  <input id="reserve" type="checkbox" name="checkbox" value="4">
+                  <input id="reserve" type="checkbox" name="checkbox" value="4" checked>
                   <label for="reserve">На словарный запас</label>
                 </div>
                 <div class="form__checkbox">
@@ -239,7 +252,7 @@
     </section>
     <section>
       <div class="container__content">
-        <div class="swiper__content">
+        <div class="swiper__content" id="sectionReviews">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper-slide1">
