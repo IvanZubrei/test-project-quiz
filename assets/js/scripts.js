@@ -20,6 +20,24 @@ const blockTitleOpen2 = document.querySelector('.block__title-open2');
 const blocktextOpen2 = document.querySelector('.block__text-open2');
 const blockQuestionAnswer2OpenClose = document.querySelector('.block__question-answer2');
 const blockQuestionAnswer3OpenClose = document.querySelector('.block__question-answer3');
+const menuBtnOpen = document.querySelector('.menu__btn-open');
+const navListOpenClose = document.querySelector('.nav-list');
+const headerContacts = document.querySelector('.contacts');
+const menuBtnCloseNav = document.querySelector('.menu__btn-close-nav');
+
+menuBtnOpen.addEventListener('click', e => {  
+  navListOpenClose.classList.toggle("nav-list-open-close");
+  headerContacts.classList.toggle("nav-list-open-close");
+  menuBtnOpen.classList.toggle("nav-list-open-close");
+  menuBtnCloseNav.classList.toggle("nav-list-open");
+});
+
+menuBtnCloseNav.addEventListener('click', e => {  
+  navListOpenClose.classList.toggle("nav-list-open-close");
+  headerContacts.classList.toggle("nav-list-open-close");
+  menuBtnOpen.classList.toggle("nav-list-open-close");
+  menuBtnCloseNav.classList.toggle("nav-list-open");
+});
 
 const toggleSitesPopup = () => {
   sitesPopupOpenClose.classList.toggle("modal__contact-open-close");   
