@@ -261,8 +261,7 @@ body{
  
 .modal-contact-form__radio input[type=radio]:checked + label:before {  
 	background: url(../img/images/radio-btn-active.svg) 0 0 no-repeat;
-  background-size: cover;
-  
+  background-size: cover;  
 }
 
 .modal-contact-form__radio input[type=radio]:checked + label {
@@ -348,7 +347,6 @@ body{
 .dropdown {
   position: relative;
 }
-
 
 .dropdown-content {
   display: none;   
@@ -489,8 +487,7 @@ body{
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
-  
+  line-height: normal;  
 } 
 
 .header__content-btn-link:hover{
@@ -509,7 +506,7 @@ body{
   margin: 0 auto;  
 }
 
-.grade{
+.header-content__grade{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -517,7 +514,7 @@ body{
   padding: 8px 166px 96px 166px;  
 }
 
-.grade__item{
+.header-content__grade__item{
   display: flex;
   align-items: center;
   gap: 16px;
@@ -527,16 +524,28 @@ body{
   cursor: pointer;
 }
 
-.grade__item:hover{
+.header-content__grade__item:hover{
   transform: scale(1.05);
   transition: 0.15s ease;
+}
+
+.header-content__grade__text{
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .container__history-test{
   display: flex;  
 }
 
-.container__history{   
+.container__history{  
+  display: flex; 
+  flex-direction: column;
+  gap: 10px;
   width: 328px; 
   padding-right: 8px; 
 }
@@ -545,10 +554,13 @@ body{
   width: 320px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
   padding: 10px 48px 10px 24px;
   border-radius: 30px;
   background-color: #000;
+}
+
+.block__question-answer:hover{
+  background-color: #9E00FF;
 }
 
 .block__title{
@@ -567,6 +579,40 @@ body{
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.block__question-answer-activ{  
+  border-radius: 0 30px 0 0;  
+  background-color: #FFF;
+}
+
+.block__title-activ{
+  color: #000;
+}
+
+.block__text-activ{
+  color: #000;
+}
+
+.block__question-answer2-open-close{
+  display: none;
+}
+
+.block__question-answer2-activ{  
+  border-radius: 0 0 30px 0;
+}
+.block__question-answer2-activ-none{  
+  color: #000;
+  background-color: #FFF;
+  border-radius: 0;
+}
+
+.block__question-answer3-open-close{
+  display: none;
+}
+
+.block__question-answer3-activ{  
+  border-radius: 0 0 30px 0;
 }
 
 .tests{
@@ -686,8 +732,7 @@ body{
   background-position: center;  
   background-size: 60%;
   background-color: #FFF;
-  border-radius: 50%; 
-  
+  border-radius: 50%;   
 }
 
 .form__checkbox:hover input[type=checkbox]:checked + label:before { 	
@@ -699,6 +744,104 @@ body{
   color: #FFF;
   transition: all 0.15s ease;
   padding: 8px 32px 8px 60px;
+}
+
+.tests__slide{
+  display: none;
+}
+
+.tests__slide2__btn{
+  color: #000;
+  background-color: inherit;
+  border: 2px solid #000;
+  margin-right: 8px;
+}
+
+.tests__slide-cloce-open{
+  display: none;
+}
+
+.tests-slide3__input{
+  display: block;
+  width: 700px;
+  height: 54px;
+  margin: 64px 0 23px 0;
+}
+
+.modal-tests-slide2-tabs__btn{
+  padding: 72px 20px 37px 0;
+}
+
+.list-slide3{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 12px 32px;
+  border-radius: 16px;
+  border: 2px solid #000;
+  margin-bottom: 65px;
+}
+
+.list-slide3__item{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.list-slide3__link{
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dropdown__slide3 {
+  position: relative;
+}
+
+.dropdown__slide5{
+  display: none;   
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding-top: 12px;
+}
+
+.dropdown-content__slide3 {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  padding-top: 15px;  
+  width: 364px; 
+  padding: 12px 32px;
+  border-radius: 16px;
+  border: 2px solid #000;
+  background: #FFF; 
+  z-index: 2;
+}
+
+.dropdown-content-slide3__link{
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px 16px;
+  border-bottom: 2px solid #000;
+  width: 300px;
+}
+
+.dropdown__slide3:hover .dropdown__slide5{
+  display: flex; 
+}
+
+.tests-slide3__close-open{
+  display: none;
 }
 
 .footer{
@@ -727,8 +870,7 @@ body{
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
-  
+  line-height: normal;  
 }
 
 .footer__phone-email-link{

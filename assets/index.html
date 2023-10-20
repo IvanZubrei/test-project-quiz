@@ -120,7 +120,7 @@
               <a class="nav-list__link" href="#sectionReviews">Отзывы</a>
             </li>
             <li class="nav-list__item dropdown">
-              <a class="nav-list__link dropbtn" href="#">Не главная</a>              
+              <a class="nav-list__link dropbtn" href="#">Не главная</a>
               <ul class="dropdown-content">
                 <li class="dropdown-content__item">
                   <a class="dropdown-content__link" href="#">Подпункт</a>
@@ -131,9 +131,9 @@
                 <li class="dropdown-content__item3">
                   <a class="dropdown-content__link dropdown-content__link3" href="#">И еще один подпункт</a>
                 </li>
-              </ul>            
+              </ul>
             </li>
-          </ul>          
+          </ul>
         </nav>
         <div class="contacts">
           <button class="btn btn__open-popup">Связаться с нами</button>
@@ -160,54 +160,65 @@
         <h1 class="title">Это Супер-квиз!</h1>
         <p class="header__content-text">Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех людей, которые
           любят проходить тесты!</p>
-        <div class="header-content__btn">          
+        <div class="header-content__btn">
           <a class="header__content-btn-link" href="#sectionQuiz">Пройти супер-квиз</a>
         </div>
         <img class="header__content-img-left" src="./img/images/question-mark-left.png" alt="question mark left image">
         <img class="header__content-img-right" src="./img/images/question-mark-right.png"
           alt="question mark right image">
       </div>
+      <ul class="header-content__grade">
+        <li class="header-content__grade__item">
+          <img class="header-content__grade__img" src="./img/images/smiley-with-tongue.svg" alt="smiley with tongue">
+          <p class="header-content__grade__text">Восхитительно</p>
+        </li>
+        <li class="header-content__grade__item">
+          <img class="header-content__grade__img" src="./img/images/smiley-with-sunglasses.svg"
+            alt="smiley with sunglasses">
+          <p class="header-content__grade__text">Лучше не бывает</p>
+        </li>
+        <li class="header-content__grade__item">
+          <img class="header-content__grade__img" src="./img/images/smiley-with-loving-eyes.svg"
+            alt="smiley with loving eyes">
+          <p class="header-content__grade__text">Где найти еще?</p>
+        </li>
+        <li class="header-content__grade__item">
+          <img class="header-content__grade__img" src="./img/images/smiley-with-admiring-eyes.svg"
+            alt="smiley with admiring eyes">
+          <p class="header-content__grade__text">В натуре четко!</p>
+        </li>
+        <li class="header-content__grade__item">
+          <img class="header-content__grade__img" src="./img/images/smiley-with-loving-eyes.svg"
+            alt="smiley with loving eyes">
+          <p class="header-content__grade__text">Круто</p>
+        </li>
+      </ul>
     </div>
   </header>
   <main>
     <section>
-      <div class="container__content" id="sectionQuiz" >
-        <ul class="grade">
-          <li class="grade__item">
-            <img class="grade__img" src="./img/images/smiley-with-tongue.svg" alt="smiley with tongue">
-            <p class="grade__text">Восхитительно</p>
-          </li>
-          <li class="grade__item">
-            <img class="grade__img" src="./img/images/smiley-with-sunglasses.svg" alt="smiley with sunglasses">
-            <p class="grade__text">Лучше не бывает</p>
-          </li>
-          <li class="grade__item">
-            <img class="grade__img" src="./img/images/smiley-with-loving-eyes.svg" alt="smiley with loving eyes">
-            <p class="grade__text">Где найти еще?</p>
-          </li>
-          <li class="grade__item">
-            <img class="grade__img" src="./img/images/smiley-with-admiring-eyes.svg" alt="smiley with admiring eyes">
-            <p class="grade__text">В натуре четко!</p>
-          </li>
-          <li class="grade__item">
-            <img class="grade__img" src="./img/images/smiley-with-loving-eyes.svg" alt="smiley with loving eyes">
-            <p class="grade__text">Круто</p>
-          </li>
-        </ul>
+      <div class="container__content" id="sectionQuiz">
         <div class="container__history-test">
           <div class="container__history">
-            <div class="block__question-answer">
-              <h4 class="block__title">Какие виды тестов вам нравятся?</h4>
-              <p class="block__text">Кто я из вселенной Марвел, На словарный запас</p>
+            <div class="block__question-answer block__question-answer-open">
+              <h4 class="block__title block__title-open">Какие виды тестов вам нравятся?</h4>
+              <p class="block__text block__text-open">Кто я из вселенной Марвел, На словарный запас</p>
+            </div>
+            <div class="block__question-answer block__question-answer2 block__question-answer2-open-close">
+              <h4 class="block__title block__title-open2">Вы любите проходить тесты?</h4>
+              <p class="block__text block__text-open2">Да, я прохожу все тесты</p>
+            </div>
+            <div class="block__question-answer block__question-answer3 block__question-answer3-open-close">
+              <h4 class="block__title">Спасибо за ответы! Заполните форму ниже?</h4>              
             </div>
           </div>
           <div class="tests">
             <div class="tests__block2"></div>
             <div class="tests__block4"></div>
             <h2 class="tests__title">Какие виды тестов вам нравятся?</h2>
-            <p class="tests__text">Многие из нас хоть раз попадались на эту удочку — хочешь пройти всего один тест из
-              интернета, и вдруг
-              понимаешь, что пролетело полдня.
+            <p class="tests__text">
+              Многие из нас хоть раз попадались на эту удочку — хочешь пройти всего один тест из
+              интернета, и вдруг понимаешь, что пролетело полдня.
             </p>
             <div class="tabs">
               <div class="tabs__btn">
@@ -245,7 +256,72 @@
                 </div>
               </div>
             </div>
-            <button class="btn">Продолжить</button>
+            <button class="btn tests__btn">Продолжить</button>
+          </div>
+          <div class="tests tests__slide2 tests__slide-cloce-open">
+            <div class="tests__block2"></div>
+            <div class="tests__block4"></div>
+            <h2 class="tests__title">Вы любите проходить тесты?</h2>
+            <p class="tests__text">
+              Нам важно узнать насолько часто Вы проходите тесты.
+            </p>
+            <div class="modal-contact-tabs__btn modal-tests-slide2-tabs__btn">
+              <div class="modal-contact-form__radio">
+                <input id="radio7" type="radio" name="radio" value="1">
+                <label for="radio7">Нет, я не никогда не прохожу тесты </label>
+              </div>
+              <div class="modal-contact-form__radio">
+                <input id="radio8" type="radio" name="radio" value="2" checked>
+                <label for="radio8">Да, я прохожу все тесты</label>
+              </div>
+              <div class="modal-contact-form__radio">
+                <input id="radio9" type="radio" name="radio" value="3">
+                <label for="radio9">Заставляю себя проходить тесты</label>
+              </div>
+              <div class="modal-contact-form__radio">
+                <input id="radio10" type="radio" name="radio" value="4">
+                <label for="radio10">Не люблю проходить тесты, но иногда приходится</label>
+              </div>
+            </div>
+            <button class="btn tests__slide2__btn tests__slide2-close__btn">Назад</button>
+            <button class="btn tests__slide2-open__btn">Продолжить</button>
+          </div>
+          <div class="tests tests__slide3 tests-slide3__close-open">
+            <div class="tests__block2"></div>
+            <div class="tests__block4"></div>
+            <img src="./img/images/smile-ok-like.svg" alt="smile icon">
+            <h2 class="tests__title">Спасибо за ответы! Заполните форму ниже</h2>
+            <p class="tests__text">
+              Ваше мнение важно для нас. Прикрепите фото с Вашей любимой картинкой и оставьте
+              комментарий насколько понравился Вам тест.
+            </p>
+            <input class="modal-contact__input tests-slide3__input" type="text" placeholder="Ваше мнение сюда">
+            <ul class="list-slide3 dropdown__slide3">
+              <li class="list-slide3__item">
+                <a class="list-slide3__link dropbtn__slide3" href="#">Очень понравился</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 13" fill="none">
+                  <path d="M21 11.5L11 1.5L1 11.5" stroke="black" stroke-width="2" />
+                </svg>
+                <div class="dropdown__slide5">
+                  <ul class="dropdown-content__slide3">
+                    <li class="dropdown-content-slide3__item">
+                      <a class="dropdown-content-slide3__link" href="#">Очень понравился</a>
+                    </li>
+                    <li class="dropdown-content-slide3__item">
+                      <a class="dropdown-content-slide3__link" href="#">Не понравился</a>
+                    </li>
+                    <li class="dropdown-content-slide3__item">
+                      <a class="dropdown-content-slide3__link" href="#">Пройду еще раз</a>
+                    </li>
+                    <li class="dropdown-content-slide3__item">
+                      <a class="dropdown-content-slide3__link" href="#">Посоветую пройти всем</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <button class="btn tests__slide3-close__btn tests__slide2__btn">Назад</button>
+            <button class="btn tests__slide3-open__btn">Продолжить</button>
           </div>
         </div>
       </div>
