@@ -115,6 +115,9 @@ testsSlide3OpenBtn.addEventListener('click', e => {
   blockQuestionAnswerOpen.classList.remove("block__question-answer-activ");
   blockTitleOpen.classList.remove("block__title-activ");
   blocktextOpen.classList.remove("block__text-activ");
+  blockQuestionAnswer2OpenClose.classList.remove("block__question-answer2-activ-none");
+  blockTitleOpen2.classList.remove("block__title-activ");
+  blocktextOpen2.classList.remove("block__text-activ");
 });
 
 blockQuestionAnswerOpen.addEventListener('click', e => {
